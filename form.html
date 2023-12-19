@@ -1,0 +1,118 @@
+<!--Forms Topic 18-07-2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Characterset with uniform transer formation with 8 bits-->
+    <meta http-equiv="Refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Demo of the Forms</h1>
+ <form method="post" action=" " target="_blank">
+    <!--Method attribute is used to not dispaly the output at the url-->
+    <!--ACTION TAG IS USED TO CREATE CONGIGURAL URL-->
+   <fieldset>
+    <!--- Field set tag is used to group the realted information of the input field on webpage-->
+    <legend>Login details</legend>
+    <!--Legend tag is used to give the name for the feildset-->
+    <label>Name:<sup>*</sup></label>
+    <input type="text" name="fnm" placeholder="Enter the first Name" required>
+    <input type="text" name="lnm" placeholder="Enter the last name">
+    <br><br>
+    <label>Email:-</label>
+    <input type="email" name="mail" placeholder="Enter the Email Id">
+    <br><br>
+    <label>Password:<sup>*</sup></label>
+    <input type="password" name="pswd" placeholder="Enter the Password" required>
+    <br>
+    <br>
+    <label>Age:-</label>
+    <input type="number" name="age" placeholder="Enter your age" min="0" max="75">
+    <br><br>
+   </fieldset>
+    <label>Date of Death:-</label>
+    <input type="date" name="Date">
+    <br><br>
+    <label>Time:-</label>
+    <input type="time" name="tym">
+    <br><br>
+    <label>Range:</label>
+    <input type="range" name="Rng" min="20" max="80">
+    <br><br>
+    <label>File:-</label>
+    <input type="file" name="anyfile">
+    <br><br>
+    <input type="reset">
+    <br><br>
+        <h1>Other inuput Attributes</h1>
+        <label>Radio Button</label>
+        <br><br>
+        <label>Gender: </label>
+        <label for="m">Male:</label>
+        <input type="radio" name="Gender" value="Male" id="m" checked>
+        <!--Checked attribuite is used to select the default option in radio or checkbox field-->
+        <!--Selected attribuite is used to select the deafult option in dropdown option-->
+        <label for="f">FeMale:</label>
+        <input type="radio" name="Gender" value="Female" id="f">
+        <label for="o">Others:</label>
+        <input type="radio" name="Gender" value="others" id="o">
+        <br><br>
+        <h2>Check Box option </h2>
+        <label>Languages:</label>
+        <label for="e">English</label>
+        <input type="checkbox" name="lang" value="eng" id="e" checked>
+        <label for="h">Hindhi</label>
+        <input type="checkbox" name="lang" value="hin" id="h">
+        <label for="t">Telugu</label>
+        <input type="checkbox" name="lang" value="tel" id="t" disabled>
+        <!--Disabled attribuite is used to make disabled condition for input feild-->
+        <!--DropDown Option-->
+        <h2>--DropDown Menu</h2>
+        <label>Places:</label>
+        <select name="Plc">
+            <option></option>
+            <option value="bang">Bangalore</option>
+            <option value="Chen">Chenni</option>
+            <option value="hyd">Hyderabad</option>
+            <option value="AP">Andhra pradesh</option>
+        </select>
+        <h2>Comment Attributes</h2>
+        <textarea name="txta" id="ta" cols="30" rows="10" placeholder="Comment box:"></textarea>
+        <br><br>
+        <br><br>
+        <input type="submit" value="Login">
+    <input type="submit" value="Login">
+    <br><br>
+ </form>
+ <br><br>
+ <h1>NON semeatic Tags</h1>
+ <!--Non sematic tags-->
+ <div>Im in div</div>
+ <div>Im in div</div>
+ <!--Div tag is used to used to combain the  html content and it is a  block level element-->
+ <span>Im in span</span>
+ <span>Im in span</span>
+ <!---Span tag also used to combine the data in html but it is inline level element-->
+</body>
+</html>
+<!--
+    Form: It is used to collect the data from the end user directly from the webpage by using the input field
+    Tags:
+    -><form> tag is used to create the form on the webpage
+        -<form> tag is paried tag & block level tag
+        NOTE: Without <form> tag we can't submit the data to the backend
+    -><label> tag is used to give the label name for the input field
+        -<label> tag is paried tag & inline level tag
+    ->To create the input field on the webpage we are using <input> tag
+    -<input>tag is a unparied tag & inline level tag
+
+    Attributes Present in the input Field
+    ->Type attribute is used to change the type of the input feild
+    ->name attribute is used to send the data to the backend.
+    NOTE:-Without using the name attribuite we can't send the data to the backend
+    ->Placeholder attribute is used to give refernce messsge for the input field.
+    & name is present inside the input feild.
+    ->Required attribute is used to make the feild  as mandatory
+    ->value attribute is used to change the value of input filed..............
+-->
